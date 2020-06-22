@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SubmissionFundamental2</string>
+    <string name="search_user">Search User</string>
+    <string name="search">search</string>
+    <string name="name">name</string>
+    <string name="username">Username</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="followers">Followers</string>
+    <string name="jumlah_follow">jumlah_follow</string>
+    <string name="github_user">Github User</string>
+    <string name="following">Following</string>
+</resources>

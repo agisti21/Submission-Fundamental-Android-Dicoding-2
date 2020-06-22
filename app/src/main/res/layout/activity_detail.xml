@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity_fragment.DetailActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBarDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/labelUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/img_avatar_detail"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txt_username_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/labelUser"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/labelCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/company"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txt_username_detail" />
+
+    <TextView
+        android:id="@+id/txt_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/labelCompany" />
+
+    <TextView
+        android:id="@+id/labelLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/location"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/txt_company" />
+    <TextView
+        android:id="@+id/txt_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelLocation" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        app:tabTextColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_location" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="615dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
